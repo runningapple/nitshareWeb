@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/myRelease.css" rel="stylesheet" type="index/css">
+		<link href="css/recourse/common.css" rel="stylesheet" type="index/css">
+		<script type="text/javascript" src="js/plugins/jquery.js"></script>
+		<!--<script type="text/javascript" src="js/plugins/jquery.fileupload.js"></script>-->
+		<script type="text/javascript" src="js/plugins/jquery-form.js" ></script>
+		<title>发布消息</title>
+	</head>
+
+	<body>
+		<div id="release_goods">
+				<div class="mr_content">
+						<div class="first area">
+							<p>给宝贝来张照片呗</p>
+							<div class="line"></div>
+							<div class="uploadBox">
+								<form class="photo_select" id="picdiv" name="picdiv" method="post" action="#" enctype="multipart/form-data">
+									<!-- 图片上传按钮 -->
+									<input id="filepic" type="file" name="filepic"/>
+									<img src="img/kuang.png" />
+								</form>
+								<!-- 图片展示模块 -->
+								<div class="files">
+								</div>
+								<div class="up_progress">
+									<div class="progress-bar"></div>
+								</div>
+								<button type="submit" style="position: relative;right: 90px;top: 150px">提交</button>
+							</div>
+						</div>
+						<div class="second area">
+							<p>给宝贝加点描述吧</p>
+							<div class="line"></div>
+							<div>
+								<span>标题</span>
+								<input type="text" id="mr_name" class="input" placeholder="给你的宝贝起个标题" />
+							</div>
+							<table>
+								<td>详情</td>
+								<td>
+									<textarea type="text" id="mr_description" class="input" ></textarea>
+									<span class="wordwrap"><var class="word">0</var>/200</span></td>
+							</table>
+						</div>
+						<div class="third area">
+							<p>给宝贝定个价吧</p>
+							<div class="line"></div>
+							<div>
+							<span>理想中的价格</span>
+							<input type="text" id="mr_price" class="input" placeholder="想卖多少呢" style="width: 100px;"/>
+							<select id="mr_discount" style="width: 130px;height: 30px;">
+								<option value="">---是否可以砍价---</option>
+								<option value="0">不可刀</option>
+								<option value="1">可小刀</option>
+							</select>
+							
+							<select id="mr_goodstype" style="width: 150px;">
+								<option value="">---选择商品类型---</option>
+								<option value="0">手机</option>
+								<option value="1">校园代步</option>
+							</select>
+							</div>
+							<div>
+							<span>联系方式</span>
+							<input type="text" id="mr_tel" class="input"/>
+							</div>
+						</div>
+						<button class="releaseBtn" id="mr_release" type="submit" style="margin-left: 260px;">发布消息</button>
+				</div>
+		<script type="text/javascript" src="js/myRelease.js"></script>
+	</body>
+
+</html>

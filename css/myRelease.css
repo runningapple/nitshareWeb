@@ -1,0 +1,74 @@
+.mr_content {
+	width: 620px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 50px 120px 0px 120px;
+		border-right: 1px solid #DDDDDD;
+border-left: 1px solid #DDDDDD;
+}
+
+#release_goods {
+	width: 100%;
+	height: 100%;
+}
+
+.line {
+	width: 600px;
+	height: 1px;
+	background-color: #1abaad;
+	margin-top: 15px;
+}
+
+.area {
+	margin-bottom: 30px;
+}
+
+.area p {
+	color: #858D8E;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+}
+
+.input {
+	margin-top: 20px;
+}
+
+textarea.input {
+	width: 450px;
+	height: 200px;
+	resize: none;
+	padding: 5px;
+	font-family: "microsoft sans serif";
+	letter-spacing: 1.5px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+}
+
+.wordwrap {
+	position: relative;
+	left: -70px;
+	top: -10px;
+}
+
+.uploadBox {
+	border: 1px solid #ddd;
+	height: 300px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+.photo_select {
+	position: relative;
+}
+
+.photo_select input {
+	width: 90px;
+	height: 90px;
+	opacity: 0;
+	margin: 10px;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}

@@ -1,0 +1,35 @@
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background: url(../img/bg.jpg);
+}
+.enrollBox{
+	width:900px;
+	height: 666px;
+	background: rgba(255,255,255,0.9);
+	margin: auto;
+}
+.contentBox{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+.title img{
+	width: 200px;
+	margin: 30px 150px 30px 150px;	
+}
+
+table td{
+	color: #3C3C3C;
+	font-size: 16px;
+	width: 80px;
+  display: inline-block;
+  padding-right: 20px;
+  margin: 10px 0;
+}
+table th{
+	text-align: right;
+	font-size: 16px;
+	font-weight: normal;
+}

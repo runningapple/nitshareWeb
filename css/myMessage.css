@@ -1,0 +1,65 @@
+.con_left{
+	width: 200px;
+	height: 600px;
+	float: left;
+}
+.con_left li{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+}
+.con_left a{
+	font-family: "microsoft yahei";
+	font-size: 16px;
+	color: #FFA500;
+}
+.con_left ul{
+	width: 200px;
+	float: right;
+	text-align: center;
+}
+.line{
+	margin-top: 30px ;
+	width: 160px;
+	height: 1px;
+	background-color: #FFA500;
+	margin: 0 auto;
+}
+.backcolor{
+	width: 200px;
+	height: 60px;
+	background-color: rgba(255,165,0,0.3);
+}	
+.con_con{
+	float: left;
+	margin-left: 50px;
+	padding-top: 50px;
+	width: 800px;
+	border-right: 1px solid #DDDDDD;
+border-left: 1px solid #DDDDDD;
+}
+.aboutMe{
+	width: 500px;
+    margin: 0 auto;
+}
+.tap{
+	border: 1px solid #DDDDDD;
+	font-family: "microsoft yahei";
+	font-size: 20px;
+	margin-left: 10px;
+}
+.line_4{
+	height: 1px;
+	width: 500px;
+	background-color: #DDDDDD;
+}
+table td{
+	font-family: "microsoft yahei";
+	color: #3C3C3C;
+	font-size: 16px;
+	width: 80px;
+	line-height: 35px;
+  display: inline-block;
+  padding-right: 20px;
+  margin-top: 20px;
+}	

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/myMessage.css" rel="stylesheet" type="index/css">
+		<link href="css/common.css" rel="stylesheet" type="index/css">
+		<script type="text/javascript" src="js/plugins/jquery.js"></script>
+		<script type="text/javascript" src="js/plugins/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="js/myMessage.js"></script>
+		<title>我的消息</title>
+	</head>
+
+	<body>
+		<div id="myMessage">
+			<div class="mm_content">
+				<div class="con_left">
+					<ul>
+						<li><a href="#">我的信息</a></li>
+						<div class="line"></div>
+						<li><a href="#">我赞过的</a></li>
+						<li><a href="#">我的评论</a></li>
+						<li><a href="#">我的发布</a></li>
+					</ul>
+				</div>
+				<div class="con_con">
+					<div class="aboutMe">
+						<span class="tap">个人资料</span>
+						<div class="line_4"></div>			
+						<table>
+							<tr>
+								<td>当前头像</td>
+								<td><img src="img/example.jpg"></td>
+							</tr>
+							
+								<td>昵称</td>
+								<td>
+									<input name="userName" id="userName" required="required"/>
+								</td>
+							</tr>
+							<tr>
+								<td>手机号</td>
+								<td>
+									<input id="userPhone" required="required">
+								</td>
+							</tr>
+							<tr>
+								<td>QQ号</td>
+								<td>
+									<input id="userQQ">
+								</td>
+							</tr>
+							<tr>
+								<td>邮箱</td>
+								<td>
+									<input id="userEmail" type="email">
+								</td>
+							</tr>
+							<tr>
+								<td>入学时间</td>
+								<td>
+									<input type="text" name="schooltime" id="starttime" class="Wdate" onClick="WdatePicker({minDate:'2000-01',dateFmt:'yyyy-MM'})">
+								</td>
+							</tr>
+							<tr>
+								<td>所在分院</td>
+								<td>
+									<input id="college" required="required">
+								</td>
+							</tr>
+							<tr>
+								<td>所学专业</td>
+								<td><input id="major" required="required"></td>
+							</tr>
+							<tr>
+								<td><button>保存</button></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

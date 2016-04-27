@@ -1,0 +1,127 @@
+<!--<%@ page language="java" contentType="text/html; charset=utf-8"pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/enroll.css" rel="stylesheet" type="text/css">
+		<link href="css/recourse/common.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/plugins/jquery.js"></script>
+		<script type="text/javascript" src="js/enroll.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>注册界面</title>
+	</head>
+
+	<body>
+		<div id="enroll">
+			<div class="enrollBox">
+				<div class="contentBox">
+					<div class="title">
+						<img src="img/welcome.png" />
+					</div>
+					<form method="post" action="">
+					<table>
+						<tr>
+							<th>账号：</th>
+							<td>
+								<input type="text" id="userId" class="input" required="required"/>
+							</td>
+						</tr>
+						<tr>
+							<th>昵称：</th>
+							<td>
+								<input type="text" id="nickname" class="input" required="required"/>
+							</td>
+						</tr>
+						<tr>
+							<th>手机号：</th>
+							<td>
+								<input type="text" id="userPhone" class="input" required="required" />
+							</td>
+						</tr>
+						<tr>
+							<th>邮箱：</th>
+							<td>
+								<input type="text" id="mail" name="email" class="input"/>
+							</td>
+						</tr>
+						<tr>
+							<th>所在分院：</th>
+							<td>
+								<select name="collegeName" id="college">
+									<option value="">------ 请选择所在分院 ------</option>
+									<option value="0">信息学院</option>
+									<option value="1">经济与贸易学院</option>
+									<option value="2">管理学院</option>
+									<option value="3">传媒学院</option>
+									<option value="4">法律学院</option>
+									<option value="5">机能学院</option>
+									<option value="6">生化学院</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>专业：</th>
+							<td>
+								<select class="major">
+									<option>------ 请选择所学专业 ------</option>
+								</select>
+								<select class="major">
+									<option>电子信息</option>
+									<option>计算机</option>
+									<option>电气</option>
+									<option>软件工程</option>
+									<option>自动化</option>
+								</select>
+								<select class="major">
+									<option>国际经济与贸易</option>
+									<option>电子商务</option>
+									<option>市场营销</option>
+								</select>
+								<select class="major">
+									<option>财管</option>
+									<option>旅管</option>
+									<option>信管</option>
+								</select>
+								<select class="major">
+									<option>艺术</option>
+									<option>信息与多媒体</option>
+								</select>
+								<select class="major">
+									<option>法学</option>
+								</select>
+								<select class="major">
+									<option>机制</option>
+									<option>能源</option>
+									<option>机电</option>
+								</select>
+								<select class="major">
+									<option>化工</option>
+									<option>制药</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>密码：</th>
+							<td>
+								<input type="password" id="password1" class="input" required="required" />
+							</td>
+						</tr>
+						<tr>
+							<th>重复密码：</th>
+							<td>
+								<input type="password" id="password2" class="input" required="required" />
+							</td>
+						</tr>
+						<tr>
+							<td><button class="enrollBtn" id="registerBtn" type="submit">注册</button></td>
+						</tr>
+					</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

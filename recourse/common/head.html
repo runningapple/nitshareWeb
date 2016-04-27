@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/recourse/common.css"/>
+        <link rel="stylesheet" type="text/css" href="../../css/recourse/head.css"/>
+        <script type="text/javascript" src="../../js/plugins/jquery.js" ></script>
+        <script type="text/javascript" src="../../js/common.js"></script>
+		<title>头部</title>
+			<script type="text/javascript">
+			function onclick1(o) {
+				$('a').attr("class","");
+				$(o).attr("class","active");
+			}
+			</script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="topleft">
+				<img class="banner" src="../../img/title.png" />
+			</div>
+			<div class="top_menu">
+				<ul>
+					<li><a onclick="onclick1(this);" href="../../index.html" target="mainframe" class="index-text">首页</a></li>
+					<li><a onclick="onclick1(this);" href="#" class="newNav">最新发布</a></li>
+					<li>
+						<p>|</p>
+					</li>
+					<li><a onclick="onclick1(this);" href="../../myRelease.html" target="mainframe"target="leftframe" class="releaseMessage">发布消息</a></li>
+					<li><a onclick="onclick1(this);" href="../../myMessage.html" class="myMessage"target="mainframe" style="padding-right: 0;">我的消息</a></li>
+				</ul>
+			</div>
+			<div class="loginEnroll">
+				<a href="../../login.html"target="_blank">登录</a><a>/</a><a href="../../enroll.html"target="_blank">注册</a>
+			</div>
+			<!--搜素框-->
+			<div class="topsearch">
+				<label class="searchicon"><img src="../../img/searchicon.png" /></label>
+				<input type="text" id="search" class="search" />
+			</div>
+		</div>
+	</body>
+</html>

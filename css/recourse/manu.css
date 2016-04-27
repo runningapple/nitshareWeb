@@ -1,0 +1,44 @@
+nav{
+	background-color: #FFFFFF;
+    position: absolute;
+	height: 100%;
+	width: 100px;
+}
+
+nav ul li{
+	border-bottom: 1px solid rgb(224,235,231);
+    position: relative;
+    height: 60px;
+}
+li.opt a{
+    color: #666666;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    /*-webkit-transition: box-shadow .2s linear;
+    -moz-transition: box-shadow .2s linear;
+    -ms-transition: box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;*/
+    }
+    .opt h3{
+	float: right;
+    width: 60px;
+    height: 100%;
+    margin-right: 9px;
+    text-align: left;
+    font-size: 14px; 
+    color: #000;
+}
+
+.sub_nav{
+    display: none;
+    width: 208px;
+    height: 60px;
+    position: absolute;
+    right: -240px;
+    top: 0;
+    background-color: #28bda0;
+    padding: 0 16px;
+    z-index: 99;
+}

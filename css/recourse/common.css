@@ -1,0 +1,62 @@
+html,
+body{
+	padding: 0;
+	border: none;
+	margin: 0;
+	width: 100%;
+	font-family: "microsoft yahei";
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+
+ button{
+	width: 80px;
+	height: 35px;
+	background-color: #1abaad;
+	color: #fff;
+	border-radius: 3px;
+	vertical-align: middle;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    margin-left: 210px;
+    cursor:pointer;
+}
+button:hover{
+	background-color:#17b6a9 ;
+}
+input,select{
+	width: 300px;
+	height: 30px;
+	border: 1px solid #ddd;
+} 
+.input{
+	font-size: 16px;
+	padding: 5px;
+	line-height: 1.4em;
+	}
+.loginEnroll a{
+	float: left;
+	color: #5c5c5c;
+	font-size: 14px;
+	margin: 0px 5px 0px 5px;
+	
+}
+.loginEnroll{
+	position: absolute;
+    right: 165px;
+    top: 10px;
+    }
+.bgcolor{
+	background-color: #1abaad;
+}
+

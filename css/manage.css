@@ -1,0 +1,55 @@
+html,
+body{
+	padding: 0;
+	border: none;
+	margin: 0;
+	width: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*顶栏*/
+.top{
+	background-color: #1abaad;
+	width: 100%;
+	height: 100px;
+}
+.topleft{
+	position: absolute;
+	left: 32px;
+	top: 32px;
+}.top span{
+	font-family: "microsoft yahei";
+	font-size: 24px;
+	color: #5c5c5c;
+	margin-left: 20px;
+}
+.box1{
+	width: 100%;
+	height: 20px;
+}
+.searchPanelDiv{
+	float: left;
+	margin: 20px;
+}
+.searchPanelDiv input{
+	width: 120px;
+	height: 25px;
+	border: 1px solid #DDDDDD;
+}
+.log_searchbtn{
+	width: 80px;
+	height: 25px;
+	background-color: #1abaad;
+	color: #fff;
+	border-radius: 3px;
+	vertical-align: middle;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    margin: 20px 0px 20px 50px;
+    cursor:pointer;
+}
