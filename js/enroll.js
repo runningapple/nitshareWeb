@@ -11,12 +11,12 @@ $(document).ready(function() {
 		} 
 		$.ajax({
 			type:"get",
-			url:"http://183.133.162.109:8080/nitshare/serve/user.register",
+			url:"http://127.0.0.1:8080/nitshareserver/serve/user.register",
 			async:false,
 			data:{
 				"nickname":nickname,
 				"account":account,
-				"password":pwd_one
+				"pwd":pwd_one
 			},
 			jsonpCallback:'callback',
 			dataType:'jsonp',

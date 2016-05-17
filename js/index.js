@@ -40,11 +40,19 @@ $(document).ready(function(){
 //	}
 	
 	getGoods();
+
+	/*页面跳转函数*/
+	function jump(){
+		$(".item").click(function(){
+			//window.parent.location.href = "detailPage.html?id="+$(this).attr("name")+"&back=1";//"http://1.runningap.applinzi.com/a.html";
+			location.href = "goodsDetails.html?id="+$(this).attr("name");
+		});		
+	}
 	
 	function getGoods(){
 		$.ajax({
 			type:"get",
-			url:"http://localhost:8080/nitshare/serve/commodity.get",
+			url:"http://localhost:8080/nitshareserver/serve/commodity.get",
 			async:true,
 			jsonpCallback:'callback',
 			dataType:'jsonp',
@@ -55,8 +63,8 @@ $(document).ready(function(){
 			success:function(data){
 				for (var i = 0; i < data.length; i++){
 					var addtext = '\
-							<li class="item">\
-								<a href="goodsDetails.html" class="img" target="mainframe">\
+							<li class="item" name="'+data[i].id+'">\
+								<a href="#" class="img" target="mainframe">\
 									<img src="'+data[i].imgUrl0+'" alt="'+data[i].cname+'">\
 								</a>\
 								<div class="info">\
@@ -71,6 +79,7 @@ $(document).ready(function(){
 					$("#list").append(addtext);
 				}
 				
+				jump();//初始化跳转函数
 				
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown, data){
