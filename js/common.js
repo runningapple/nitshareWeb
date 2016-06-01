@@ -16,5 +16,8 @@ $(document).ready(function() {
 		$(this).children(".sub_nav").hide();
 	});
 
-
+	$("#searchbtn").click(function(){
+		var name = $("#search").val();
+		$("#searchbtn").attr('href','../../index.html?name='+name);
+	});
 });

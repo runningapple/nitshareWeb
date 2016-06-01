@@ -39,6 +39,10 @@ $(document).ready(function(){
 //		
 //	}
 	
+	$("#search").click(function(){
+		alert("dd");
+	});
+	
 	getGoods();
 
 	/*页面跳转函数*/
@@ -52,7 +56,7 @@ $(document).ready(function(){
 	function getGoods(){
 		$.ajax({
 			type:"get",
-			url:"http://localhost:8080/nitshareserver/serve/commodity.get",
+			url:"http://localhost:8080/nitshare/serve/commodity.get",
 			async:true,
 			jsonpCallback:'callback',
 			dataType:'jsonp',
