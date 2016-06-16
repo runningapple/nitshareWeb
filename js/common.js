@@ -20,4 +20,19 @@ $(document).ready(function() {
 		var name = $("#search").val();
 		$("#searchbtn").attr('href','../../index.html?name='+name);
 	});
+	
+	$("#latestbtn").click(function(){
+		$("#latestbtn").attr('href','../../index.html?date=on');
+	});
+	
+	if (localStorage.id != "null"){
+		$(".logbtn").remove();
+	}else {
+		$("#logoutbtn").remove();
+	}
+	
+	$("#logoutbtn").click(function(){
+		localStorage.id = null;
+		localStorage.account = null;
+	});
 });

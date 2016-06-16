@@ -26,7 +26,7 @@ $(document).ready(function(){
 	function loadDetail(){
 		$.ajax({
 			type:"get",
-			url:"http://localhost:8080/nitshareserver/serve/commodity.detail",
+			url:"http://115.28.73.144:8080/nitshare/serve/commodity.detail",
 			async:true,//异步刷新
 			data:{
 				"id": id,

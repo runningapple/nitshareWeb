@@ -11,7 +11,7 @@ $(document).ready(function() {
 		} 
 		$.ajax({
 			type:"get",
-			url:"http://127.0.0.1:8080/nitshareserver/serve/user.register",
+			url:"http://115.28.73.144:8080/nitshare/serve/user.register",
 			async:false,
 			data:{
 				"nickname":nickname,
@@ -21,7 +21,7 @@ $(document).ready(function() {
 			jsonpCallback:'callback',
 			dataType:'jsonp',
 			success:function(data){
-				alert(data);
+				window.location.href = "login.html";
 			},
 			error:function(XMLHttpRequest, textStatus, errorThrown, data){
 				alert(errorThrown);

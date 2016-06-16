@@ -1,16 +1,22 @@
 nav{
-	background-color: #FFFFFF;
-    position: absolute;
+	background-color: rgba(23,183,169,0.5);	
+    position: fixed;
 	height: 100%;
-	width: 100px;
+	width: 150px;
+	z-index: 1;
 }
-
+ul{
+	list-style: none;
+}
 nav ul li{
 	border-bottom: 1px solid rgb(224,235,231);
     position: relative;
     height: 60px;
+    background: url(../../img/jt.png) no-repeat;
+        background-position: 85% 50%;
 }
 li.opt a{
+	text-decoration: none;
     color: #666666;
     height: 60px;
     line-height: 60px;
@@ -21,14 +27,13 @@ li.opt a{
     -o-transition: box-shadow .2s linear;
     transition: box-shadow .2s linear;*/
     }
-    .opt h3{
-	float: right;
+.opt h3{
     width: 60px;
     height: 100%;
-    margin-right: 9px;
+    margin:0 auto;
     text-align: left;
     font-size: 14px; 
-    color: #000;
+    color: #FFFFFF;
 }
 
 .sub_nav{
@@ -38,7 +43,14 @@ li.opt a{
     position: absolute;
     right: -240px;
     top: 0;
-    background-color: #28bda0;
+    background-color: rgba(26,186,173,0.8);
     padding: 0 16px;
     z-index: 99;
+}
+.sub_nav a{
+	text-decoration: none;
+}
+.little_icon{
+
+    margin: 0 30px -3px 10px;
 }

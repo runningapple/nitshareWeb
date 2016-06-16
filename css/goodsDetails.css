@@ -1,5 +1,5 @@
 .content{
-	background-color: #E3EEEC;
+	background-color: #F5F6F7;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -13,7 +13,7 @@
 .ershou-hd{
 	padding-left: 25px;
 	padding-bottom: 20px;
-    border-bottom: dashed 1px #E3EEEC;
+    border-bottom: dashed 1px #F5F6F7;
     position: relative;
 }
 
@@ -75,11 +75,11 @@ ul.ershou-detail li{
 }
 .ershou-description{
 	max-height: 150px;
-	overflow: hidden;
 }
 textarea.input{
 	width: 300px;
-	height: 400px;
+	height: 150px;
+	background-color:#fff;
 	resize: none;
 	font-family: "microsoft sans serif";
 	font-size: 16px;

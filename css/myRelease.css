@@ -1,10 +1,16 @@
+html,
+body{
+	background-color: #F5F6F7;
+	padding: 0;
+	border: none;
+	height: 100%;
+}
 .mr_content {
 	width: 620px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	padding: 50px 120px 0px 120px;
-		border-right: 1px solid #DDDDDD;
-border-left: 1px solid #DDDDDD;
+	border: 1px solid #DDDDDD;
 }
 
 #release_goods {
@@ -52,7 +58,7 @@ textarea.input {
 
 .uploadBox {
 	border: 1px solid #ddd;
-	height: 300px;
+	height: 150px;
 	width: 300px;
 	margin-top: 20px;
 }

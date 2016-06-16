@@ -15,6 +15,11 @@ $(function() {
 
 $(document).ready(function(){
 	
+	
+	if (localStorage.id == "null"){
+		alert("登录后才能发布商品");
+		window.location.href = "index.html";
+	}
 	/**
 	 *图片上传方法 
 	 */
@@ -24,18 +29,18 @@ $(document).ready(function(){
 		formData.append("uid","1");
 		$.ajax({
 			type:"post",
-			url:"http://localhost:8080/nitshareserver/serve/fileupload",
+			url:"http://115.28.73.144:8080/nitshare/serve/fileupload",
 			async:false,
 			contentType: false,	//这个一定要写
 			processData: false, //这个也一定要写，不然会报错
 			data:formData,
 			dataType:'json',	//返回类型，有json，text，HTML。这里并没有jsonp格式，所以别妄想能用jsonp做跨域了。
 			success:function(data){
-				alert(data);
+				alert("提交成功，请继续填写商品详细信息");
 			},
 			error:function(XMLHttpRequest, textStatus, errorThrown, data){
 				alert(errorThrown);
-			}			
+			}
 		});
 	}
 	
@@ -48,10 +53,10 @@ $(document).ready(function(){
 		var price = $("#mr_price").val();
 		var description = $("#mr_description").val();
 		var bargain = $("#mr_discount option:selected").val();
-		var uid = "1";//用户id
+		var uid = localStorage.id;//用户id
 		$.ajax({
 			type:"get",
-			url:"http://127.0.0.1:8080/nitshareserver/serve/commodity.add",
+			url:"http://115.28.73.144:8080/nitshare/serve/commodity.add",
 			async:false,
 			data:{
 				"cname":cname,
@@ -63,7 +68,8 @@ $(document).ready(function(){
 			jsonpCallback:'callback',
 			dataType:'jsonp',
 			success:function(data){
-				alert(data);
+				alert("添加成功");
+				window.location.href = "index.html?date=on";
 			},
 			error:function(XMLHttpRequest, textStatus, errorThrown, data){
 				alert(errorThrown);
